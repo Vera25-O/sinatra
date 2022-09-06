@@ -5,7 +5,7 @@ function Home() {
     <div className="home">
       <h1>EMPLOYEE</h1>
       <h1>CORNER</h1>
-      <marquee direction="left">
+      <marquee direction="right">
         <p>WELCOME</p>
       </marquee>
       
