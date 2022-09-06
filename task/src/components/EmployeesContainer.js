@@ -33,9 +33,9 @@ function EmployeesContainer({ employees, setEmployees }) {
         key={employee.id}
         deleted={employee.delete}
         id={employee.id}
-        name={employee.name}
+        username={employee.username}
         image={employee.image}
-        task={employee.task}
+        position={employee.position}
         updateEmployees={updateEmployees}
         
       />

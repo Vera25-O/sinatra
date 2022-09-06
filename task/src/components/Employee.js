@@ -21,7 +21,7 @@ function Employee({ id, username, task, image, deleted, updateEmployees }) {
       <h3>{username}</h3>
       <img src={image} alt="employee" />
       <p>
-        <strong>{task}</strong>
+        <strong>{Position}</strong>
       </p>
 
       <button onClick={addToDeleted}>
