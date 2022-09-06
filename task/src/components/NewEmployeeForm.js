@@ -16,7 +16,7 @@ function NewEmployeeForm({ updateEmployees }) {
     ) {
       alert("Please input all fields");
     } else {
-      fetch("https://morning-stream-44230.herokuapp.com/shoes", {
+      fetch("http://localhost:9292/employees", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -2,7 +2,7 @@ import React from "react";
 
 function Employee({ id, username, task, image, deleted, updateEmployees }) {
   function addToDeleted() {
-    fetch(`https://morning-stream-44230.herokuapp.com/shoes/${id}`, {
+    fetch(`http://localhost:9292/employees/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "Application/json",

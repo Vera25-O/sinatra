@@ -15,7 +15,7 @@ function App() {
   const [employees, setEmployees] = useState([]);
 
   useEffect(() => {
-    fetch("https://morning-stream-44230.herokuapp.com/shoes")
+    fetch("http://localhost:9292/employees")
       .then((response) => response.json())
       .then((employees) => setEmployees(employees));
   }, []);
