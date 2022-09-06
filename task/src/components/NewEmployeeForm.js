@@ -12,9 +12,8 @@ function NewEmployeeForm({ updateEmployees }) {
     if (
       newData.username === "" ||
       newData.image === "" ||
-      newData.task === "" ||
-      newData.salary === "" ||
-      newData.department === ""
+      newData.position === "" ||
+      newData.salary === ""
     ) {
       alert("Please input all fields");
     } else {
