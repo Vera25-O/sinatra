@@ -20,7 +20,7 @@ function Employee({ id, username, position, image, deleted, salary, updateEmploy
     <div id={id}>
       <h3>{username}</h3>
       <img src={image} alt="employee" />
-      <h3>{salary}</h3>
+      <h3>KSH {salary}</h3>
       <h2>
         <strong>{position}</strong>
       </h2>
