@@ -48,7 +48,7 @@ a {
 }
 
 .employees-container > div {
-  border-bottom: solid 1px gold;
+  border-bottom: solid 1px rgb(41, 41, 88);
   padding-bottom: 1em;
   min-width: 20em;
 }
