@@ -36,6 +36,7 @@ function EmployeesContainer({ employees, setEmployees }) {
         username={employee.username}
         image={employee.image}
         position={employee.position}
+        salary={employee.salary}
         updateEmployees={updateEmployees}
         
       />
