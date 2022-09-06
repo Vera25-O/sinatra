@@ -47,7 +47,7 @@ function NewEmployeeForm({ updateEmployees }) {
         onChange={doChange}
       />
       <input
-        value={newData.task}
+        value={newData.position}
         name="position"
         placeholder="Position"
         onChange={doChange}
