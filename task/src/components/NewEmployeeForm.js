@@ -67,7 +67,7 @@ function NewEmployeeForm({ updateEmployees }) {
       <input
         value={newData.department}
         name="department"
-        placeholder="Deoartment"
+        placeholder="Department"
         onChange={doChange}
       />
       <input type="submit" value="Assign Employee" />
