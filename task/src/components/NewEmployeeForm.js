@@ -12,7 +12,9 @@ function NewEmployeeForm({ updateEmployees }) {
     if (
       newData.username === "" ||
       newData.image === "" ||
-      newData.task === ""
+      newData.task === "" ||
+      newData.salary === "" ||
+      newData.department === ""
     ) {
       alert("Please input all fields");
     } else {
@@ -26,7 +28,7 @@ function NewEmployeeForm({ updateEmployees }) {
         .then((response) => response.json())
         .then((data) => {
           updateEmployees(data);
-          setNewData({ ...newData, username: "", task: "", image: "" });
+          setNewData({ ...newData, username: "", task: "", image: "",salary:"" });
         });
     }
   }
@@ -54,6 +56,18 @@ function NewEmployeeForm({ updateEmployees }) {
         value={newData.image}
         name="image"
         placeholder="image"
+        onChange={doChange}
+      />
+      <input
+        value={newData.salary}
+        name="salary"
+        placeholder="Salary"
+        onChange={doChange}
+      />
+      <input
+        value={newData.department}
+        name="department"
+        placeholder="Deoartment"
         onChange={doChange}
       />
       <input type="submit" value="Assign Employee" />
