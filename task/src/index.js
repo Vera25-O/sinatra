@@ -14,7 +14,7 @@ root.render(
 );
 
 
-var colors = ["silver", "aquamarine", "maroon", "aquamarine"]
+var colors = ["silver", "aquamarine", "silver", "aquamarine"]
 var currentColor = 0
 var textColor = document.getElementsByTagName("h1")
 
