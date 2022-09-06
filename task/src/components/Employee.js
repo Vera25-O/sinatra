@@ -1,6 +1,6 @@
 import React from "react";
 
-function Employee({ id, username, task, image, deleted, updateEmployees }) {
+function Employee({ id, username, position, image, deleted, updateEmployees }) {
   function addToDeleted() {
     fetch(`http://localhost:9292/employees/${id}`, {
       method: "PATCH",
@@ -20,9 +20,10 @@ function Employee({ id, username, task, image, deleted, updateEmployees }) {
     <div id={id}>
       <h3>{username}</h3>
       <img src={image} alt="employee" />
-      <p>
-        <strong>{Position}</strong>
-      </p>
+      <h3>{salary}</h3>
+      <h2>
+        <strong>{position}</strong>
+      </h2>
 
       <button onClick={addToDeleted}>
         {deleted ? "Deleted" : "Delete"}
