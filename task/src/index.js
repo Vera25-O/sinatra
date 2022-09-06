@@ -26,7 +26,7 @@ function changeColor() {
   }
 }
 
-setInterval(changeColor, 2000)
+setInterval(changeColor, 3000)
 
 
 
