@@ -1,0 +1,113 @@
+body {
+  background-color: black;
+  color: silver;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+  
+}
+
+.home {
+  text-align: center;
+  line-height: 40px;
+}
+
+a {
+  
+  margin-right: 5%;
+}
+
+.assigned {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  margin-top: 5%;
+  min-width: 12em;
+  width: 100%;
+  border-right: solid black 1px;
+  background:aquamarine;
+  padding: 1em;
+}
+
+.sidebar > button {
+  width: 100%;
+}
+
+.employees-container {
+  max-width: 30em;
+  margin: auto;
+}
+
+.employees-container > div {
+  border-bottom: solid 1px gold;
+  padding-bottom: 1em;
+  min-width: 20em;
+}
+
+.employees-container > div > button {
+  min-width: 4em;
+  
+}
+
+form.new-employee-form {
+  border: solid black 1px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+form.new-employee-form > input,
+form.new-employee-form > textarea {
+  font-size: 1em;
+  font-family: sans-serif;
+  margin-bottom: 0.5em;
+}
+
+input[type="submit"],
+button {
+  font-weight: bold;
+  font-size: 1em;
+  background: black;
+  border: solid maroon 1px;
+  padding: 0.5em;
+  cursor: pointer;
+  color: maroon;
+}
+
+
+  
+
+.select-bar {
+  background-color: aquamarine;
+  height: 35px;
+  
+  margin-left: 5%;
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.btn{
+  width: 140%;
+}
+
+
+
+h1{
+  color: aquamarine;
+  font-size: 400%;
+  margin-top: 8%;
+}
+
+p{
+  font-size: 500%;
+}
