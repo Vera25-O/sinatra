@@ -28,7 +28,7 @@ function NewEmployeeForm({ updateEmployees }) {
         .then((response) => response.json())
         .then((data) => {
           updateEmployees(data);
-          setNewData({ ...newData, username: "", task: "", image: "",salary:"" });
+          setNewData({ ...newData, username: "", position: "", image: "",salary:"" });
         });
     }
   }
@@ -48,8 +48,8 @@ function NewEmployeeForm({ updateEmployees }) {
       />
       <input
         value={newData.task}
-        name="task"
-        placeholder="task"
+        name="position"
+        placeholder="Position"
         onChange={doChange}
       />
       <input
@@ -64,12 +64,7 @@ function NewEmployeeForm({ updateEmployees }) {
         placeholder="Salary"
         onChange={doChange}
       />
-      <input
-        value={newData.department}
-        name="department"
-        placeholder="Department"
-        onChange={doChange}
-      />
+      
       <input type="submit" value="Assign Employee" />
     </form>
     </div>
