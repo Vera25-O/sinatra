@@ -1,7 +1,7 @@
 import React from "react";
 
 function Employee({ id, username, position, image, deleted, salary, updateEmployees }) {
-  function addToDeleted() {
+  function addToDelete() {
     fetch(`http://localhost:9292/employees/${id}`, {
       method: "PATCH",
       headers: {
