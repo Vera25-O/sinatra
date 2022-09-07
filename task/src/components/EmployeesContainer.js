@@ -59,7 +59,7 @@ function EmployeesContainer({ employees, setEmployees }) {
         className="select-bar"
       >
         <option value="All">All Employees</option>
-        <option value="Delete">Deleted</option>
+        
       </select>
 
       {displayEmployees}
