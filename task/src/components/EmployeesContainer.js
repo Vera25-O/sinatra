@@ -8,8 +8,6 @@ function EmployeesContainer({ employees, setEmployees }) {
     setSelectedOption(e.target.value);
   }
 
-  
-
   function updateEmployees(data) {
     const updatedEmployees = employees.map((employee) => {
       if (employee.id === data.id) {
@@ -19,6 +17,16 @@ function EmployeesContainer({ employees, setEmployees }) {
     });
     setEmployees(updatedEmployees);
   }
+
+  function handleDelete(id) {
+
+  const deleted =  employees.filter((employee) =>{
+        return employee.id !== id
+    })
+    setEmployees(deleted)
+  }
+
+
 
   const filteredEmployees = employees.filter((employee) => {
     if (selectedOption === "All") {
@@ -38,18 +46,22 @@ function EmployeesContainer({ employees, setEmployees }) {
         position={employee.position}
         salary={employee.salary}
         updateEmployees={updateEmployees}
-        
+        handleDelete={handleDelete}
       />
     );
   });
 
   return (
     <div className="employees-container">
-      <select onChange={handleSelect} value={selectedOption} className="select-bar">
+      <select
+        onChange={handleSelect}
+        value={selectedOption}
+        className="select-bar"
+      >
         <option value="All">All Employees</option>
         <option value="Delete">Deleted</option>
       </select>
-     
+
       {displayEmployees}
     </div>
   );

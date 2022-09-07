@@ -1,18 +1,13 @@
 import React from "react";
 
-function Employee({ id, username, position, image, deleted, salary, updateEmployees }) {
+function Employee({ id, username, position, image, deleted, salary,handleDelete }) {
   function addToDelete() {
     fetch(`http://localhost:9292/employees/${id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "Application/json",
-        Accept: "Application/json",
-      },
-      body: JSON.stringify({ delete: !deleted }),
+      method: "DELETE"
     })
       .then((response) => response.json())
-      .then((data) => updateEmployees(data))
-
+      .then((data) => handleDelete(id))
+      
       .catch((error) => console.log(error));
   }
 
@@ -25,7 +20,7 @@ function Employee({ id, username, position, image, deleted, salary, updateEmploy
         <strong>{position}</strong>
       </h2>
 
-      <button onClick={addToDeleted}>
+      <button onClick={addToDelete}>
         {deleted ? "Deleted" : "Delete"}
       </button>
     </div>
