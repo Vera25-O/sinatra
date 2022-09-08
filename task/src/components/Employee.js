@@ -19,9 +19,10 @@ function Employee({ id, username, position, image, deleted, salary,handleDelete 
       <h2>
         <strong>{position}</strong>
       </h2>
+      
 
       <button onClick={addToDelete}>
-        {deleted ? "Deleted" : "Delete"}
+        Delete
       </button>
     </div>
   );
