@@ -6,7 +6,7 @@ function Home() {
       <h1>EMPLOYEE</h1>
       <h1>CORNER</h1>
       <marquee direction="right">
-        <p>WELCOME</p>
+        <p>WELCOME TO TASK MANAGER</p>
       </marquee>
       
     </div>
