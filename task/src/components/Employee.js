@@ -1,6 +1,6 @@
 import React from "react";
 
-function Employee({ id, username, position, image, deleted, salary,handleDelete }) {
+function Employee({ id, username, position, image, salary,handleDelete }) {
   function addToDelete() {
     fetch(`http://localhost:9292/employees/${id}`, {
       method: "DELETE"

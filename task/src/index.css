@@ -14,8 +14,11 @@ body {
 }
 
 .home {
+  height: 500%;
+  margin-bottom: 35%;
+  background-image: url("https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b2ZmaWNlJTIwc3BhY2V8ZW58MHx8MHx8&w=1000&q=80");
   text-align: center;
-  line-height: 40px;
+  color: aquamarine;
 }
 
 a {
@@ -105,7 +108,7 @@ button {
 h1{
   color: aquamarine;
   font-size: 400%;
-  margin-top: 8%;
+  margin-top: 5%;
 }
 
 p{
