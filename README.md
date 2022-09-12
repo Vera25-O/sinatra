@@ -1,5 +1,5 @@
-# sinatra
-An application for managing companie's role and salary
+# Task Manager
+An application for managing companie's task and salary
 
 ## Author
 Vera Awuor Onuko
