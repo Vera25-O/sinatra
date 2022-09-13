@@ -14,7 +14,7 @@ Vera Awuor Onuko
 
 ## Demo setup Instructions
 Open your browser,
-Click on this [Link](https://tourmaline-youtiao-528bbb.netlify.app/) to acces the website
+Click on this [Link](https://steady-griffin-2ed77a.netlify.app/) to acces the website
 
 ## Installations
 fork the repository
