@@ -17,7 +17,7 @@ function NewEmployeeForm({ updateEmployees }) {
     ) {
       alert("Please input all fields");
     } else {
-      fetch("http://localhost:9292/employees", {
+      fetch("https://nameless-thicket-02202.herokuapp.com/employees", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
